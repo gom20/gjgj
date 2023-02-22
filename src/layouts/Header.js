@@ -10,8 +10,30 @@ export default function Header() {
                         글적글적 연구소
                     </Link>
                 </h1>
+                <div className="link-wrap">
+                    <div className="page-link">
+                        <Link activeClass="active" className="test1" to="intro" spy={true} smooth={true} duration={500}>
+                            Home
+                        </Link>
+                    </div>
+                    <div className="page-link active">
+                        <Link activeClass="active" className="test2" to="about" spy={true} smooth={true} duration={500}>
+                            About
+                        </Link>
+                    </div>
+                    <div className="page-link">
+                        <Link activeClass="active" className="test3" to="apply" spy={true} smooth={true} duration={500}>
+                            Apply
+                        </Link>
+                    </div>
+                    <div className="page-link">
+                        <Link activeClass="active" className="test4" to="contact" spy={true} smooth={true} duration={500}>
+                            Contact
+                        </Link>
+                    </div>
+                </div>
 
-                <Menu></Menu>
+                {/* <Menu></Menu> */}
             </nav>
         </div>
     );

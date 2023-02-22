@@ -32,7 +32,7 @@ export default function Header() {
                     </div>
                 </div>
 
-                <div className="nav-icon"></div>
+                {/* <div className="nav-icon"></div> */}
             </nav>
         </div>
     );
