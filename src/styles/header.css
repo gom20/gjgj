@@ -1,0 +1,55 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4rem;
+    background-color: #fff;
+}
+
+.nav-icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.nav-icon,
+.nav-icon:before,
+.nav-icon:after {
+    width: 2.1rem;
+    height: 0.13rem;
+    background: #000;
+}
+
+.nav-icon:before {
+    content: '';
+    position: absolute;
+    bottom: 0.5rem;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav-icon:after {
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav-icon.active {
+    background-color: #fff;
+}
+.nav-icon.active:before {
+    bottom: 0;
+    transform: rotate(45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    background: #1b191c;
+}
+
+.nav-icon.active:after {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    background: #1b191c;
+}
