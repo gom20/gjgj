@@ -1,10 +1,9 @@
-import Intro from '@/components/Intro';
-import Contact from '@/components/Contact';
-import { Inter } from '@next/font/google';
-import Head from 'next/head';
-import Review from '@/components/Review';
 import About from '@/components/About';
 import Apply from '@/components/Apply';
+import Contact from '@/components/Contact';
+import Intro from '@/components/Intro';
+import { Inter } from '@next/font/google';
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,7 +19,6 @@ export default function Home() {
             <main className="main">
                 <Intro />
                 <About />
-                <Review />
                 <Apply />
                 <Contact />
             </main>

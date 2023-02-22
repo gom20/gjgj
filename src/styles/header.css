@@ -2,11 +2,28 @@
     position: fixed;
     top: 0;
     width: 100vw;
+    height: 4rem;
+    background-color: #fff;
+}
+
+.nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 4rem;
-    background-color: #fff;
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 1.5rem 2rem;
+    overflow: hidden;
+}
+
+.link-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-link {
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .nav-icon {
