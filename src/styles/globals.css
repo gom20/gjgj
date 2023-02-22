@@ -1,6 +1,6 @@
 @import 'header.css';
 @import 'home.css';
-@import 'about.css';
+@import 'intro.css';
 @import 'contact.css';
 
 :root {
@@ -72,4 +72,10 @@ a {
     html {
         color-scheme: dark;
     }
+}
+
+.element {
+    padding-top: 10rem;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
 }

@@ -1,7 +1,10 @@
-import About from '@/components/About';
+import Intro from '@/components/Intro';
 import Contact from '@/components/Contact';
 import { Inter } from '@next/font/google';
 import Head from 'next/head';
+import Review from '@/components/Review';
+import About from '@/components/About';
+import Apply from '@/components/Apply';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,7 +18,10 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className="main">
+                <Intro />
                 <About />
+                <Review />
+                <Apply />
                 <Contact />
             </main>
         </>
