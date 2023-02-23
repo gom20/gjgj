@@ -1,6 +1,5 @@
 import About from '@/components/About';
 import Apply from '@/components/Apply';
-import Contact from '@/components/Contact';
 import Intro from '@/components/Intro';
 import Review from '@/components/Review';
 import Why from '@/components/Why';
@@ -18,13 +17,13 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+
             <main className="main">
                 <Intro />
                 <Why />
                 <About />
                 <Review />
                 <Apply />
-                <Contact />
             </main>
         </>
     );

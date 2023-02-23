@@ -8,7 +8,7 @@ export default function Header() {
             <nav className="nav-bar">
                 <h1>
                     <Link activeClass="active" className="test1" to="intro" spy={true} smooth={true} duration={500}>
-                        <Image priority src="/logo.png" height={50} width={125} alt="Follow us on Twitter"></Image>
+                        <img src="/logo.png" className="logo-img"></img>
                     </Link>
                 </h1>
                 <div className="link-wrap">
@@ -35,11 +35,6 @@ export default function Header() {
                     <div className="page-link">
                         <Link activeClass="active" className="test4" to="apply" spy={true} smooth={true} duration={500}>
                             무료 PDF
-                        </Link>
-                    </div>
-                    <div className="page-link">
-                        <Link activeClass="active" className="test4" to="contact" spy={true} smooth={true} duration={500}>
-                            CONTACT
                         </Link>
                     </div>
                 </div>

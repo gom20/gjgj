@@ -1,0 +1,36 @@
+#why .problem-container {
+    margin-bottom: 2rem;
+}
+
+#why .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#why .point-container .item-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#why .point-container .item {
+    width: 18rem;
+    height: 18rem;
+    background-color: #f6f6f6;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10%;
+}
+
+#why .point-container .item-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+#why .point-container .item-img {
+    width: 4rem;
+    height: 4rem;
+}

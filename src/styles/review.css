@@ -1,0 +1,16 @@
+#review .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#review .item-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#review .item-img {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 1rem;
+}

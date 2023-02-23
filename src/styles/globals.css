@@ -1,6 +1,12 @@
 @import 'header.css';
+@import 'footer.css';
+
 @import 'intro.css';
-@import 'contact.css';
+@import 'why.css';
+@import 'about.css';
+@import 'review.css';
+@import 'apply.css';
+@import './../../public/static/fonts/style.css';
 
 :root {
     --foreground-rgb: 0, 0, 0;
@@ -43,14 +49,13 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 6rem;
     min-height: 100vh;
     min-width: 100vw;
 }
 
 @media all and (min-width: 1023px) {
     .main {
-        padding: 6rem;
+        padding: 10rem;
     }
 }
 

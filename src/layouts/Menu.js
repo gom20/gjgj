@@ -58,14 +58,6 @@ export default function Menu() {
                         </Link>
                     </div>
                 </ListItem>
-
-                <ListItem key={'contact'}>
-                    <div className="page-link">
-                        <Link activeClass="active" className="test4" to="contact" spy={true} smooth={true} duration={500}>
-                            CONTACT
-                        </Link>
-                    </div>
-                </ListItem>
             </List>
         </Box>
     );

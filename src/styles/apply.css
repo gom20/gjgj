@@ -1,0 +1,15 @@
+#apply {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#apply .apply-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#apply .apply-input {
+    margin-bottom: 1rem;
+}

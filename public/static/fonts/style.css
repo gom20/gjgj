@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'uhbee';
+    src: url('UhBeeKeongKeong.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
