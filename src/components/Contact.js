@@ -6,20 +6,20 @@ export default function Contact() {
     const form = useRef();
 
     const sendEmail = (e) => {
-        if (process.env.NEXT_PUBLIC_API_URL) {
+        console.log(process.env.NEXT_PUBLIC_EMAIL_KEY);
+        if (process.env.NEXT_PUBLIC_EMAIL_KEY) {
             alert('환경변수 잘 들어감');
         } else {
             alert('환경변수 못찾음');
         }
-        // alert(process.env.NEXT_PUBLIC_API_URL);
-        emailjs.sendForm('service_2ncutkp', 'template_8p22p29', form.current, process.env.NEXT_PUBLIC_API_URL).then(
-            (result) => {
-                console.log(result.text);
-            },
-            (error) => {
-                console.log(error.text);
-            }
-        );
+        // emailjs.sendForm('service_2ncutkp', 'template_8p22p29', form.current, process.env.NEXT_PUBLIC_EMAIL_KEY).then(
+        //     (result) => {
+        //         console.log(result.text);
+        //     },
+        //     (error) => {
+        //         console.log(error.text);
+        //     }
+        // );
     };
 
     return (
