@@ -1,12 +1,28 @@
 @import 'header.css';
-@import 'home.css';
 @import 'intro.css';
 @import 'contact.css';
 
 :root {
     --foreground-rgb: 0, 0, 0;
-    /* --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255; */
+    --background-rgb: 255, 255, 255;
+}
+
+@media (min-width: 1023px) {
+    :root {
+        font-size: 1em;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    :root {
+        font-size: 0.85em;
+    }
+}
+
+@media all and (max-width: 767px) {
+    :root {
+        font-size: 0.75em;
+    }
 }
 
 * {
@@ -22,24 +38,39 @@ body {
     font-family: 'Pretendard';
 }
 
-body {
-    color: rgb(var(--foreground-rgb));
-    background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+@media all and (min-width: 1023px) {
+    .main {
+        padding: 6rem;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-    html {
-        color-scheme: dark;
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    .main {
+        padding: 4rem;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .main {
+        padding: 2rem;
     }
 }
 
 .element {
-    padding-top: 10rem;
-    margin-top: 15rem;
-    margin-bottom: 15rem;
+    width: 100%;
+    padding-top: 6rem;
+}
+
+.element:first-child {
+    padding-top: 8rem;
 }
