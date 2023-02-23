@@ -13,7 +13,7 @@ export default function Header() {
                 <div className="link-wrap">
                     <div className="page-link">
                         <Link activeClass="active" className="test1" to="intro" spy={true} smooth={true} duration={500}>
-                            Home
+                            Intro
                         </Link>
                     </div>
                     <div className="page-link active">
@@ -32,8 +32,9 @@ export default function Header() {
                         </Link>
                     </div>
                 </div>
-
-                <Menu></Menu>
+                <div className="menu-wrap">
+                    <Menu></Menu>
+                </div>
             </nav>
         </div>
     );
