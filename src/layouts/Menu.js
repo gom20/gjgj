@@ -22,31 +22,47 @@ export default function Menu() {
                 <ListItem key={'intro'}>
                     <div className="page-link">
                         <Link activeClass="active" className="test1" to="intro" spy={true} smooth={true} duration={500}>
-                            Intro
+                            HOME
                         </Link>
                     </div>
                 </ListItem>
 
                 <ListItem key={'about'}>
                     <div className="page-link">
-                        <Link activeClass="active" className="test2" to="about" spy={true} smooth={true} duration={500}>
-                            About
+                        <Link activeClass="active" className="test2" to="why" spy={true} smooth={true} duration={500}>
+                            WHY
                         </Link>
                     </div>
                 </ListItem>
 
                 <ListItem key={'apply'}>
                     <div className="page-link">
-                        <Link activeClass="active" className="test2" to="apply" spy={true} smooth={true} duration={500}>
-                            Apply
+                        <Link activeClass="active" className="test3" to="about" spy={true} smooth={true} duration={500}>
+                            ABOUT
                         </Link>
                     </div>
                 </ListItem>
 
                 <ListItem key={'contact'}>
                     <div className="page-link">
-                        <Link activeClass="active" className="test2" to="contact" spy={true} smooth={true} duration={500}>
-                            Contact
+                        <Link activeClass="active" className="test4" to="review" spy={true} smooth={true} duration={500}>
+                            수강후기
+                        </Link>
+                    </div>
+                </ListItem>
+
+                <ListItem key={'contact'}>
+                    <div className="page-link">
+                        <Link activeClass="active" className="test4" to="apply" spy={true} smooth={true} duration={500}>
+                            무료 PDF
+                        </Link>
+                    </div>
+                </ListItem>
+
+                <ListItem key={'contact'}>
+                    <div className="page-link">
+                        <Link activeClass="active" className="test4" to="contact" spy={true} smooth={true} duration={500}>
+                            CONTACT
                         </Link>
                     </div>
                 </ListItem>

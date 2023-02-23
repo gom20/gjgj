@@ -2,6 +2,8 @@ import About from '@/components/About';
 import Apply from '@/components/Apply';
 import Contact from '@/components/Contact';
 import Intro from '@/components/Intro';
+import Review from '@/components/Review';
+import Why from '@/components/Why';
 import { Inter } from '@next/font/google';
 import Head from 'next/head';
 
@@ -18,7 +20,9 @@ export default function Home() {
             </Head>
             <main className="main">
                 <Intro />
+                <Why />
                 <About />
+                <Review />
                 <Apply />
                 <Contact />
             </main>
