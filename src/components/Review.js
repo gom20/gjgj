@@ -8,8 +8,8 @@ export default function Review() {
         for (let i = firstIdx; i <= lastIdx; i++) {
             const path = '/review/' + i + '.png';
             result.push(
-                <div className="item-img-wrap">
-                    <Image src={path} className="item-img" alt="review" width={300} height={300}></Image>
+                <div className="item-img-wrap" key={i}>
+                    <Image priority src={path} className="item-img" alt="review" width={300} height={300}></Image>
                 </div>
             );
         }
@@ -19,9 +19,9 @@ export default function Review() {
         <Element name="review" className="element">
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
                 <section id="review">
-                    <div class="title">수강 후기</div>
-                    <div class="item-wrap">{renderReview(1, 4)}</div>
-                    <div class="item-wrap">{renderReview(5, 8)}</div>
+                    <div className="title">수강 후기</div>
+                    <div className="item-wrap">{renderReview(1, 4)}</div>
+                    <div className="item-wrap">{renderReview(5, 8)}</div>
                 </section>
             </motion.div>
         </Element>

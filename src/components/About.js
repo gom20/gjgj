@@ -8,8 +8,8 @@ export default function About() {
             for (let i = firstIdx; i <= lastIdx; i++) {
                 const path = '/portfolio/' + i + '.png';
                 result.push(
-                    <div className="item">
-                        <Image src={path} width={300} height={170} className="item-img" alt="portfolio"></Image>
+                    <div className="item" key={cnt + '|' + i}>
+                        <Image priority src={path} width={300} height={170} className="item-img" alt="portfolio"></Image>
                     </div>
                 );
             }

@@ -8,7 +8,7 @@ export default function Header() {
             <nav className="nav-bar">
                 <h1>
                     <Link activeClass="active" className="test1" to="intro" spy={true} smooth={true} duration={500}>
-                        <Image src="/logo.png" className="logo-img" width={125} height={50} alt="logo"></Image>
+                        <Image priority src="/logo.png" className="logo-img" width={125} height={50} alt="logo"></Image>
                     </Link>
                 </h1>
                 <div className="link-wrap">

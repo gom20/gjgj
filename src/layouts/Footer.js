@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Footer() {
     return (
         <div className="footer">
-            <Image src="/logo-white.png" className="logo-img" width={125} height={50} alt="logo"></Image>
+            <Image priority src="/logo-white.png" className="logo-img" width={125} height={50} alt="logo"></Image>
             <div className="content-wrap">
                 <div className="content-text">
                     <p>
