@@ -33,7 +33,7 @@ export default function Header() {
                     </div>
                 </div>
 
-                {/* <Menu></Menu> */}
+                <Menu></Menu>
             </nav>
         </div>
     );

@@ -6,7 +6,6 @@ export default function Contact() {
     const form = useRef();
 
     const sendEmail = (e) => {
-        console.log(process.env.NEXT_PUBLIC_EMAIL_KEY);
         if (process.env.NEXT_PUBLIC_EMAIL_KEY) {
             alert('환경변수 잘 들어감');
         } else {
