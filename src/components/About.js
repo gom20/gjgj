@@ -1,6 +1,22 @@
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Element } from 'react-scroll';
 export default function About() {
+    const renderPortfolioImage = (firstIdx, lastIdx) => {
+        const result = [];
+        for (let cnt = 0; cnt < 2; cnt++) {
+            for (let i = firstIdx; i <= lastIdx; i++) {
+                const path = '/portfolio/' + i + '.png';
+                result.push(
+                    <div className="item">
+                        <Image src={path} width={300} height={170} className="item-img" alt="portfolio"></Image>
+                    </div>
+                );
+            }
+        }
+        return result;
+    };
+
     return (
         <Element name="about" className="element">
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="about">
@@ -43,109 +59,11 @@ export default function About() {
 
                     <div className="portfolio-container">
                         <div className="slider">
-                            <motion.div className="item-wrap">
-                                <div className="item">
-                                    <img src="/portfolio/1.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/2.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/3.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/4.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/5.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/6.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/7.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/8.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/1.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/2.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/3.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/4.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/5.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/6.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/7.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/8.png" className="item-img"></img>
-                                </div>
-                            </motion.div>
+                            <motion.div className="item-wrap">{renderPortfolioImage(1, 8)}</motion.div>
                         </div>
 
                         <div className="slider">
-                            <motion.div className="item-wrap">
-                                <div className="item">
-                                    <img src="/portfolio/9.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/10.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/11.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/12.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/13.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/14.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/15.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/16.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/9.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/10.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/11.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/12.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/13.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/14.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/15.png" className="item-img"></img>
-                                </div>
-                                <div className="item">
-                                    <img src="/portfolio/16.png" className="item-img"></img>
-                                </div>
-                            </motion.div>
+                            <motion.div className="item-wrap">{renderPortfolioImage(9, 16)}</motion.div>
                         </div>
                     </div>
                 </section>

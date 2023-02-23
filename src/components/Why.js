@@ -74,9 +74,8 @@ export default function Why() {
                                 <AccordionDetails>
                                     <Typography>
                                         수많은 블로그 글쓰기 강의가 있지만, 맛집을 소개해서 방문자수만 많게 만드는 것이 능사는 아닙니다. 브랜딩을
-                                        위해서는 많은 사람들이 스쳐가는 글이 아니라, 나의 다른 글도 보게 만드는 매력적인 글이 필요합니다. 그리고 그
-                                        글은 '나' 혹은 '나의 업무'를 소개하는 글이어야 합니다. 나의 SNS에 매일 찾아오고 오래 머무는 팬을 만들어야
-                                        합니다.
+                                        위해서는 많은 사람들이 스쳐&apos;나의 업무&apos;를 소개하는 글이어야 합니다. 나의 SNS에 매일 찾아오고 오래
+                                        머무는 팬을 만들어야 합니다.
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -130,7 +129,7 @@ export default function Why() {
                                 <div className="item-title">글쓰기</div>
                                 <EditIcon className="item-img"></EditIcon>
                                 <div className="item-text">
-                                    콘텐츠가 중요한 시대입니다. 그리고 콘텐츠의 토대는 '글'입니다. 논술강사 10년의 경력으로 한 글자, 한 글자
+                                    콘텐츠가 중요한 시대입니다. 그리고 콘텐츠의 토대는 &apos;글&apos;입니다. 논술강사 10년의 경력으로 한 글자, 한 글자
                                     첨삭해드립니다.
                                 </div>
                             </div>
@@ -143,7 +142,7 @@ export default function Why() {
                                 <div className="item-title">브랜딩</div>
                                 <HistoryEduIcon className="item-img"></HistoryEduIcon>
                                 <div className="item-text">
-                                    글쓰기가 필요한 이유. 바로 브랜딩 때문입니다. 정확한 방향으로, 진정성있게 나를 알리는 방법을 알려드립니다.{' '}
+                                    글쓰기가 필요한 이유. 바로 브랜딩 때문입니다. 정확한 방향으로, 진정성있게 나를 알리는 방법을 알려드립니다.
                                 </div>
                             </div>
                         </div>

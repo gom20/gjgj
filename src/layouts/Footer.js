@@ -1,11 +1,12 @@
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
     return (
         <div className="footer">
-            <img src="/logo-white.png" className="logo-img"></img>
+            <Image src="/logo-white.png" className="logo-img" width={125} height={50} alt="logo"></Image>
             <div className="content-wrap">
                 <div className="content-text">
                     <p>

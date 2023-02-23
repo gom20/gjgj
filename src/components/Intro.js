@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Element } from 'react-scroll';
 export default function Intro() {
     return (
@@ -18,7 +19,7 @@ export default function Intro() {
                             </div>
                             <div className="analysis"></div>
                         </div>
-                        <img src="/intro.png" className="desc-img"></img>
+                        <Image src="/intro.png" className="desc-img" width={300} height={530} alt="intro"></Image>
                     </div>
                 </section>
             </motion.div>
