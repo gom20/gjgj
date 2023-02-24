@@ -60,11 +60,13 @@
     font-size: 1em;
     font-weight: 700;
     font-family: 'Noto Serif KR', serif;
+    transition: all 0.2s ease-in-out;
 }
 
-/* .link-wrap .page-link .active {
-    color: #d2876b;
-} */
+.header .link-wrap .page-link:hover {
+    transform: scale(1.2);
+    color: #f6d321;
+}
 
 /* menu */
 .menu-wrap {

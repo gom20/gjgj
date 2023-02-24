@@ -52,10 +52,18 @@ export default function Why() {
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
                 <section id="why">
                     <div className="problem-container">
-                        <div className="title">
-                            이러한 고민을 <span>해결해드립니다.</span>
-                        </div>
-                        <div className="accordion-container">
+                        <motion.div
+                            className="title"
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8 }}>
+                            이러한 고민을 <b>해결해드립니다.</b>
+                        </motion.div>
+                        <motion.div
+                            className="accordion-container"
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.5 }}>
                             <div className="item-wrap">
                                 <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                                     <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
@@ -123,11 +131,17 @@ export default function Why() {
                                     </AccordionDetails>
                                 </Accordion>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
 
                     <div className="point-container">
-                        <div className="title">글적글적 연구소만의 깊이</div>
+                        <motion.div
+                            className="title"
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8 }}>
+                            글적글적 연구소만의 깊이
+                        </motion.div>
                         <div className="item-wrap">
                             <div className="item">
                                 <div className="item-title">글쓰기</div>
