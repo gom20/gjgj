@@ -1,7 +1,8 @@
 import useScrollCount from '@/hooks/useScrollCount';
+import { Button } from '@mui/material';
 import { motion } from 'framer-motion';
 import Image from 'next/legacy/image';
-import { Element } from 'react-scroll';
+import { Element, Link } from 'react-scroll';
 export default function Intro() {
     const challengeCount = useScrollCount(30, 0, 2000, 1000);
     const subjectCount = useScrollCount(30, 0, 2000, 2000);
@@ -33,7 +34,7 @@ export default function Intro() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 1 }}
                         viewport={{ once: true }}>
-                        글쓰기 챌린지 PDF 지금 받아가세요.
+                        글쓰기 챌린지 전자책 지금 받아가세요.
                     </motion.div>
 
                     <div className="content-wrap">
@@ -81,6 +82,11 @@ export default function Intro() {
                                     </div>
                                 </div>
                             </div>
+                            <button className="apply-button">
+                                <Link activeClass="active" to="apply" spy={true} smooth={true} duration={1000}>
+                                    무료전자책 신청하기
+                                </Link>
+                            </button>
                         </div>
                         <div className="intro-img">
                             <Image priority src="/intro.png" width={711} height={575} alt="intro" layout="responsive"></Image>

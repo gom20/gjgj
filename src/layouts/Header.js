@@ -13,7 +13,7 @@ export default function Header() {
                     </Link>
                 </h1>
                 <div className="link-wrap">
-                    <div className="page-link">
+                    <div className="page-link ">
                         <Link activeClass="active" className="test1" to="intro" spy={true} smooth={true} duration={500}>
                             처음
                         </Link>

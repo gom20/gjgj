@@ -57,7 +57,7 @@
 
 .link-wrap .page-link {
     margin: 0rem 1.5rem;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 700;
     font-family: 'Noto Serif KR', serif;
     transition: all 0.2s ease-in-out;
@@ -65,7 +65,7 @@
 
 .header .link-wrap .page-link:hover {
     transform: scale(1.2);
-    color: #f6d321;
+    color: #f6c350;
 }
 
 /* menu */
@@ -83,8 +83,11 @@
     }
 }
 
-.menu-wrap .page-link {
-    margin: 0rem 2rem;
+.drawer-link {
+    margin: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Noto Serif KR', serif;
 }
 
 .menu-icon {

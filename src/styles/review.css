@@ -9,10 +9,10 @@
 #review .sub-title {
     font-family: 'Noto Serif KR', serif;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
     margin-bottom: 2rem;
-    color: #d2876b;
+    color: #808080;
 }
 
 #review .item-wrap {
@@ -30,11 +30,18 @@
 }
 
 #review .item-img-wrap {
-    width: 15rem;
-    height: 15rem;
+    width: 14.5rem;
+    height: 14.5rem;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
     margin-bottom: 1rem;
+}
+
+#review .item-img-wrap .item-img {
+    /* transition: all 0.2s ease-in-out; */
+}
+
+#review .item-img-wrap .item-img:hover {
 }
 
 #review .review-container {

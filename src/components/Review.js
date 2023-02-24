@@ -16,14 +16,16 @@ export default function Review() {
                         className="item-img-wrap"
                         initial={{ opacity: 0, rotateY: 90 }}
                         whileInView={{ opacity: 1, rotateY: 0 }}
-                        transition={{ duration: 0.5, delay: delayTime1 * 0.1 }}>
+                        transition={{ duration: 0.8, delay: delayTime1 * 0.1 }}
+                        viewport={{ once: true }}>
                         <Image priority src={path1} className="item-img" alt="review" width={300} height={300}></Image>
                     </motion.div>
                     <motion.div
                         className="item-img-wrap"
                         initial={{ opacity: 0, rotateY: 90 }}
                         whileInView={{ opacity: 1, rotateY: 0 }}
-                        transition={{ duration: 0.5, delay: delayTime2 * 0.1 }}>
+                        transition={{ duration: 0.8, delay: delayTime2 * 0.1 }}
+                        viewport={{ once: true }}>
                         <Image priority src={path2} className="item-img" alt="review" width={300} height={300}></Image>
                     </motion.div>
                 </div>
@@ -48,7 +50,7 @@ export default function Review() {
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.3, delay: 0.5 }}>
-                            그저 그런 1일1포스팅을 완료하는 글쓰기가 아니라 고퀄리티 포스팅이 되도록 첨삭하여, 브랜딩이 되는 글을 완성하도록
+                            그저 그런 1일 1포스팅을 완료하는 글쓰기가 아니라 고퀄리티 포스팅이 되도록 첨삭하여, 브랜딩이 되는 글을 완성하도록
                             도와드립니다.
                         </motion.div>
                         <div className="item-wrap">{renderReview(1, 4)}</div>

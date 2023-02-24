@@ -1,6 +1,6 @@
 import emailjs from '@emailjs/browser';
-import { Button, TextField } from '@mui/material';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { useRef } from 'react';
 import { Element } from 'react-scroll';
 export default function Apply() {
@@ -25,16 +25,18 @@ export default function Apply() {
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
                 <section id="apply">
                     <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-                        <div className="title">30일 글쓰기 챌린지</div>
-                        <div className="sub-title">무료 PDF 신청하기</div>
+                        <div className="title">글쓰기, 브랜딩, 커리어 전략까지</div>
+                        <div className="sub-title">완벽 대비 전자책 신청하기</div>
                     </motion.div>
 
+                    <Image priority src="/apply-img.png" width={300} height={280} alt="apply"></Image>
+
                     <form ref={form} onSubmit={sendEmail} className="apply-form">
-                        <TextField id="outlined-basic" label="이름" variant="outlined" name="from_name" size="small" className="apply-input" />
-                        <TextField id="outlined-basic" label="이메일" variant="outlined" name="from_email" size="small" className="apply-input" />
-                        <Button type="submit" variant="contained" color="primary">
-                            보내기
-                        </Button>
+                        <input name="from_name" className="apply-input" placeholder="이름을 입력해주세요" />
+                        <input name="from_email" className="apply-input" placeholder="이메일을 입력해주세요" />
+                        <button type="submit" className="apply-button">
+                            신청하기
+                        </button>
                     </form>
                 </section>
             </motion.div>

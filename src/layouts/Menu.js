@@ -20,7 +20,7 @@ export default function Menu() {
         <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)} onKeyDown={toggleDrawer(false)}>
             <List>
                 <ListItem key={'intro'}>
-                    <div className="page-link">
+                    <div className="drawer-link">
                         <Link activeClass="active" to="intro" spy={true} smooth={true} duration={500}>
                             처음
                         </Link>
@@ -28,7 +28,7 @@ export default function Menu() {
                 </ListItem>
 
                 <ListItem key={'about'}>
-                    <div className="page-link">
+                    <div className="drawer-link">
                         <Link activeClass="active" to="why" spy={true} smooth={true} duration={500}>
                             이유
                         </Link>
@@ -36,7 +36,7 @@ export default function Menu() {
                 </ListItem>
 
                 <ListItem key={'apply'}>
-                    <div className="page-link">
+                    <div className="drawer-link">
                         <Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>
                             글적
                         </Link>
@@ -44,7 +44,7 @@ export default function Menu() {
                 </ListItem>
 
                 <ListItem key={'contact'}>
-                    <div className="page-link">
+                    <div className="drawer-link">
                         <Link activeClass="active" to="review" spy={true} smooth={true} duration={500}>
                             후기
                         </Link>
@@ -52,7 +52,7 @@ export default function Menu() {
                 </ListItem>
 
                 <ListItem key={'contact'}>
-                    <div className="page-link">
+                    <div className="drawer-link">
                         <Link activeClass="active" to="apply" spy={true} smooth={true} duration={500}>
                             신청
                         </Link>
