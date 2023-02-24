@@ -1,6 +1,6 @@
 import useScrollCount from '@/hooks/useScrollCount';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import { Element } from 'react-scroll';
 export default function Intro() {
     const challengeCount = useScrollCount(30, 0, 2000, 1000);
@@ -31,24 +31,30 @@ export default function Intro() {
                             </div>
                             <div className="analysis">
                                 <div className="item-wrap">
-                                    <div className="item-title">글쓰기 챌린지</div>
-                                    <div className="item-value">
-                                        <div {...challengeCount} />
-                                        <div>일</div>
+                                    <div className="item">
+                                        <div className="item-title">글쓰기 챌린지</div>
+                                        <div className="item-value">
+                                            <div {...challengeCount} />
+                                            <div>일</div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="item-wrap">
-                                    <div className="item-title">글쓰기 주제</div>
-                                    <div className="item-value">
-                                        <div {...subjectCount} />
-                                        <div>개</div>
+                                    <div className="item">
+                                        <div className="item-title">글쓰기 주제</div>
+                                        <div className="item-value">
+                                            <div {...subjectCount} />
+                                            <div>개</div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="item-wrap">
-                                    <div className="item-title">글쓰기 강의 만족도</div>
-                                    <div className="item-value">
-                                        <div {...satisfactionCount} />
-                                        <div>%</div>
+                                    <div className="item">
+                                        <div className="item-title">글쓰기 강의 만족도</div>
+                                        <div className="item-value">
+                                            <div {...satisfactionCount} />
+                                            <div>%</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

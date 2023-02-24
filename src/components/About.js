@@ -22,7 +22,9 @@ export default function About() {
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="about">
                 <section id="about">
                     <div className="history-container">
-                        <div className="title">글적글적 연구소의 발자취</div>
+                        <div className="title">
+                            글적글적 연구소의 <b>발자취</b>
+                        </div>
                         <div className="item-wrap">
                             <div className="item">
                                 <div className="item-title">브랜드 아이덴티티를 구축했습니다.</div>

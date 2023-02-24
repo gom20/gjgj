@@ -45,6 +45,11 @@ body {
     word-break: keep-all;
 }
 
+b {
+    color: #d2876b;
+    font-weight: 700;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -54,34 +59,51 @@ body {
     min-width: 100vw;
 }
 
+.element {
+    width: 100%;
+}
+
 @media all and (min-width: 1023px) {
-    .main {
-        padding: 10rem;
+    #apply {
+        padding: 4rem 10rem;
+    }
+
+    #intro {
+        padding: 10rem 10rem 4rem;
+    }
+    #why,
+    #about,
+    #review {
+        padding: 4rem 0rem;
     }
 }
 
 @media all and (min-width: 768px) and (max-width: 1023px) {
-    .main {
-        padding: 4rem;
+    #apply {
+        padding: 4rem 4rem;
+    }
+
+    #intro {
+        padding: 8rem 4rem 4rem;
+    }
+    #why,
+    #about,
+    #review {
+        padding: 4rem 0rem;
     }
 }
 
 @media all and (max-width: 767px) {
-    .main {
-        padding: 2rem;
+    #apply {
+        padding: 2rem 2rem;
     }
-}
 
-.element {
-    width: 100%;
-    padding-top: 4rem;
-}
-
-.element:first-child {
-    /* padding-top: 8rem; */
-}
-
-b {
-    color: #d2876b;
-    font-weight: 700;
+    #intro {
+        padding: 8rem 2rem 2rem;
+    }
+    #why,
+    #about,
+    #review {
+        padding: 2rem 0rem;
+    }
 }

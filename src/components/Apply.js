@@ -24,7 +24,8 @@ export default function Apply() {
         <Element name="apply" className="element">
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
                 <section id="apply">
-                    <h1>무료 PDF 신청하기</h1>
+                    <div className="title">30일 글쓰기 챌린지</div>
+                    <div className="sub-title">무료 PDF 신청하기</div>
                     <form ref={form} onSubmit={sendEmail} className="apply-form">
                         <TextField id="outlined-basic" label="이름" variant="outlined" name="from_name" size="small" className="apply-input" />
                         <TextField id="outlined-basic" label="이메일" variant="outlined" name="from_email" size="small" className="apply-input" />

@@ -1,10 +1,27 @@
 #why .problem-container {
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ffeae2;
+    padding: 4rem 0rem;
 }
 
 #why .title {
     font-size: 2.5rem;
     font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#why .accordion-container {
+    background-color: #fff;
+}
+
+#why .point-container {
+    width: 100%;
+    padding: 4rem 0rem;
 }
 
 #why .point-container .item-wrap {
@@ -33,4 +50,28 @@
 #why .point-container .item-img {
     width: 4rem;
     height: 4rem;
+}
+
+@media all and (min-width: 1023px) {
+    #why .accordion-container {
+        width: 60%;
+        padding: 3rem;
+        border-radius: 2rem 2rem 2rem 2rem;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    #why .accordion-container {
+        width: 80%;
+        padding: 3rem;
+        border-radius: 2rem 2rem 2rem 2rem;
+    }
+}
+
+@media all and (max-width: 767px) {
+    #why .accordion-container {
+        width: 90%;
+        padding: 1.5rem;
+        border-radius: 1rem 1rem 1rem 1rem;
+    }
 }
