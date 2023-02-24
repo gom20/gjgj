@@ -22,7 +22,8 @@
 
 #about .history-container .title {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 600;
+    font-family: 'Noto Serif KR', serif;
     margin-bottom: 2rem;
 }
 

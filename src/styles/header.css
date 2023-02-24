@@ -33,6 +33,12 @@
     overflow: hidden;
 }
 
+.header .logo-text {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
 .header .logo-img {
     width: 125px;
     height: 50px;
@@ -51,9 +57,14 @@
 
 .link-wrap .page-link {
     margin: 0rem 1.5rem;
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Noto Serif KR', serif;
 }
+
+/* .link-wrap .page-link .active {
+    color: #d2876b;
+} */
 
 /* menu */
 .menu-wrap {

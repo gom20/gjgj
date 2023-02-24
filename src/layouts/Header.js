@@ -8,33 +8,34 @@ export default function Header() {
             <nav className="nav-bar">
                 <h1>
                     <Link activeClass="active" className="test1" to="intro" spy={true} smooth={true} duration={500}>
-                        <Image priority src="/logo.png" className="logo-img" width={125} height={50} alt="logo"></Image>
+                        <div className="logo-text">글적글적연구소</div>
+                        {/* <Image priority src="/logo.png" className="logo-img" width={125} height={50} alt="logo"></Image> */}
                     </Link>
                 </h1>
                 <div className="link-wrap">
                     <div className="page-link">
                         <Link activeClass="active" className="test1" to="intro" spy={true} smooth={true} duration={500}>
-                            HOME
+                            처음
                         </Link>
                     </div>
                     <div className="page-link">
                         <Link activeClass="active" className="test2" to="why" spy={true} smooth={true} duration={500}>
-                            WHY
+                            이유
                         </Link>
                     </div>
                     <div className="page-link">
                         <Link activeClass="active" className="test3" to="about" spy={true} smooth={true} duration={500}>
-                            ABOUT
+                            글적
                         </Link>
                     </div>
                     <div className="page-link">
                         <Link activeClass="active" className="test4" to="review" spy={true} smooth={true} duration={500}>
-                            수강후기
+                            후기
                         </Link>
                     </div>
                     <div className="page-link">
                         <Link activeClass="active" className="test4" to="apply" spy={true} smooth={true} duration={500}>
-                            무료 PDF
+                            신청
                         </Link>
                     </div>
                 </div>

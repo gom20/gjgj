@@ -1,11 +1,13 @@
 #review .title {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 600;
+    font-family: 'Noto Serif KR', serif;
     text-align: center;
     margin-bottom: 1rem;
 }
 
 #review .sub-title {
+    font-family: 'Noto Serif KR', serif;
     font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
@@ -37,7 +39,7 @@
 
 #review .review-container {
     width: 100%;
-    background-color: #ffeae2;
+    background-color: #fff4d8;
 }
 
 @media all and (min-width: 1023px) {

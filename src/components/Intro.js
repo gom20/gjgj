@@ -11,12 +11,11 @@ export default function Intro() {
         <Element name="intro" className="element">
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
                 <section id="intro">
+                    <div className="title">단 30일 안에</div>
                     <div className="title">
-                        단 30일안에 <b>글쓰기, 브랜딩, 커리어 전략까지</b> 완벽 대비
+                        <span className="em">글쓰기, 브랜딩, 커리어 전략까지</span> 완벽 대비
                     </div>
-                    <div className="sub-title">
-                        <b>글쓰기 챌린지 PDF </b>지금 받아가세요.
-                    </div>
+                    <div className="sub-title">글쓰기 챌린지 PDF 지금 받아가세요.</div>
 
                     <div className="content-wrap">
                         <div className="desc-wrap">

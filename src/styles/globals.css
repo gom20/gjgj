@@ -43,11 +43,7 @@ body {
     overflow-x: hidden;
     font-family: 'Pretendard';
     word-break: keep-all;
-}
-
-b {
-    color: #d2876b;
-    font-weight: 700;
+    color: #4d4d4d;
 }
 
 .main {
@@ -63,18 +59,22 @@ b {
     width: 100%;
 }
 
+span {
+    color: #f6d321;
+}
+
 @media all and (min-width: 1023px) {
     #apply {
         padding: 4rem 10rem;
     }
 
     #intro {
-        padding: 10rem 10rem 4rem;
+        padding: 10rem 10rem 2rem;
     }
     #why,
     #about,
     #review {
-        padding: 4rem 0rem;
+        padding: 2rem 0rem 0rem;
     }
 }
 
@@ -84,12 +84,12 @@ b {
     }
 
     #intro {
-        padding: 8rem 4rem 4rem;
+        padding: 8rem 4rem 2rem;
     }
     #why,
     #about,
     #review {
-        padding: 4rem 0rem;
+        padding: 2rem 0rem 0rem;
     }
 }
 
@@ -104,6 +104,6 @@ b {
     #why,
     #about,
     #review {
-        padding: 2rem 0rem;
+        padding: 2rem 0rem 0rem;
     }
 }

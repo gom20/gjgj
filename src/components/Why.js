@@ -49,11 +49,11 @@ export default function Why() {
 
     return (
         <Element name="why" className="element">
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="why">
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
                 <section id="why">
                     <div className="problem-container">
                         <div className="title">
-                            이러한 고민을 <b>해결해드립니다.</b>
+                            이러한 고민을 <span>해결해드립니다.</span>
                         </div>
                         <div className="accordion-container">
                             <div className="item-wrap">
@@ -127,7 +127,7 @@ export default function Why() {
                     </div>
 
                     <div className="point-container">
-                        <div className="title">글적글적연구소 3 POINTS</div>
+                        <div className="title">글적글적 연구소만의 깊이</div>
                         <div className="item-wrap">
                             <div className="item">
                                 <div className="item-title">글쓰기</div>
