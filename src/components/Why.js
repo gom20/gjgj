@@ -54,7 +54,7 @@ export default function Why() {
                 <section id="why">
                     <div className="problem-container">
                         <div className="bg-img">
-                            <Image priority src="/whybggray.png" width={2160} height={1620} alt="bg" layout="responsive"></Image>
+                            <Image priority src="/whybgyellow.png" width={2160} height={1620} alt="bg" layout="responsive"></Image>
                         </div>
                         <div className="content-container">
                             <div className="sub-title">글적글적 연구소</div>

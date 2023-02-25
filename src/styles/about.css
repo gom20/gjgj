@@ -1,44 +1,55 @@
-@media all and (min-width: 1023px) {
-    #about .history-container {
-        padding: 4rem 10rem;
-    }
-}
-
-@media all and (min-width: 768px) and (max-width: 1023px) {
-    #about .history-container {
-        padding: 4rem 4rem;
-    }
-}
-
-@media all and (max-width: 767px) {
-    #about .history-container {
-        padding: 2rem 2rem;
-    }
-}
-
 #about .history-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
 }
 
 #about .history-container .title {
     font-size: 2.5rem;
     font-weight: 600;
     font-family: 'Noto Serif KR', serif;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+#about .history-container .item-wrap {
+    /* width: 40rem; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #about .history-container .item {
+    flex: 1;
     margin-bottom: 1rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    box-shadow: 0 0 1rem #fff, 0 0 1rem #fff, 0 0 0.3rem #f6c350, 0 0 0.3rem #f6c350, 0 0 0.3rem #f6c350, 0 0 0.3rem #f6c350;
+    margin: 0rem 1rem;
+}
+
+#about .history-container .item:nth-child(2n-1) {
+}
+
+#about .history-container .item:nth-child(2n) {
+    background-color: #fff4d8;
 }
 
 #about .history-container .item-title {
     font-size: 1.2rem;
-    color: #d2876b;
-    font-weight: 700;
+    color: #f6c350;
+    font-weight: 600;
+    font-family: 'Noto Serif KR', serif;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 #about .history-container .item-text {
     line-height: 1.5rem;
+    font-size: 1rem;
 }
 
 #about .portfolio-container .slider {
@@ -100,4 +111,22 @@
 
 #about .portfolio-container .item-img:hover {
     transform: scale(1.1);
+}
+
+@media all and (min-width: 1023px) {
+    #about .history-container {
+        padding: 0rem 4rem;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    #about .history-container {
+        padding: 0rem 4rem;
+    }
+}
+
+@media all and (max-width: 767px) {
+    #about .history-container {
+        padding: 0rem 1rem;
+    }
 }

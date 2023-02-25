@@ -65,45 +65,54 @@ span {
 
 @media all and (min-width: 1023px) {
     #apply {
-        padding: 4rem 10rem;
+        padding: 10rem 10rem;
     }
 
     #intro {
-        padding: 10rem 10rem 4rem;
+        padding: 10rem 10rem 10rem;
     }
-    #why,
     #about,
+    #why {
+        padding: 10rem 0rem;
+    }
+
     #review {
-        padding: 2rem 0rem 0rem;
+        padding: 0rem 0rem;
     }
 }
 
 @media all and (min-width: 768px) and (max-width: 1023px) {
     #apply {
-        padding: 4rem 4rem;
+        padding: 7rem 4rem;
     }
 
     #intro {
-        padding: 8rem 4rem 2rem;
+        padding: 7rem 4rem 7rem;
     }
     #why,
-    #about,
+    #about {
+        padding: 7rem 0rem;
+    }
+
     #review {
-        padding: 2rem 0rem 0rem;
+        padding: 0rem 0rem;
     }
 }
 
 @media all and (max-width: 767px) {
     #apply {
-        padding: 2rem 2rem;
+        padding: 7rem 2rem;
     }
 
     #intro {
-        padding: 8rem 2rem 2rem;
+        padding: 7rem 2rem 7rem;
     }
     #why,
-    #about,
+    #about {
+        padding: 7rem 0rem;
+    }
+
     #review {
-        padding: 2rem 0rem 0rem;
+        padding: 0rem 0rem;
     }
 }

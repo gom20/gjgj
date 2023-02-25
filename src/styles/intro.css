@@ -69,17 +69,6 @@
 
 #intro .apply-button {
     width: 13rem;
-    height: 2.5rem;
-    line-height: 2.5rem;
-    border: 1px solid #f6c350;
-    border-radius: 2rem 2rem 2rem 2rem;
-    background-color: #fff;
-    color: #f6c350;
-}
-
-#intro .apply-button:hover {
-    background-color: #f6c350;
-    color: #4d4d4d;
 }
 
 @media all and (min-width: 1023px) {

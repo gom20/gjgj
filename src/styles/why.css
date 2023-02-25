@@ -1,6 +1,7 @@
 #why {
     background-color: #fff4d8;
 }
+
 #why .problem-container {
     display: flex;
     flex-direction: row;
@@ -90,7 +91,7 @@
 
 @media all and (min-width: 1023px) {
     #why .problem-container {
-        padding: 2rem 10rem;
+        padding: 0rem 10rem;
     }
 
     #why .accordion-container {

@@ -37,6 +37,7 @@
     font-family: 'Noto Serif KR', serif;
     font-size: 1.2rem;
     font-weight: 900;
+    cursor: pointer;
 }
 
 .header .logo-img {
@@ -61,10 +62,15 @@
     font-weight: 700;
     font-family: 'Noto Serif KR', serif;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .header .link-wrap .page-link:hover {
     transform: scale(1.2);
+    color: #f6c350;
+}
+
+.header .link-wrap .active {
     color: #f6c350;
 }
 
@@ -88,6 +94,7 @@
     font-size: 1.5rem;
     font-weight: 400;
     font-family: 'Noto Serif KR', serif;
+    cursor: pointer;
 }
 
 .menu-icon {
