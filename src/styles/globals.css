@@ -7,7 +7,6 @@
 @import 'aboutslider.css';
 @import 'review.css';
 @import 'apply.css';
-@import './../../public/static/fonts/style.css';
 
 :root {
     --foreground-rgb: 0, 0, 0;
