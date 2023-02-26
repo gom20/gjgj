@@ -4,6 +4,7 @@
 @import 'intro.css';
 @import 'why.css';
 @import 'about.css';
+@import 'aboutslider.css';
 @import 'review.css';
 @import 'apply.css';
 @import './../../public/static/fonts/style.css';
@@ -83,7 +84,7 @@ span {
 
 @media all and (min-width: 768px) and (max-width: 1023px) {
     #apply {
-        padding: 7rem 4rem;
+        padding: 7rem 10rem;
     }
 
     #intro {

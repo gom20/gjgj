@@ -62,14 +62,14 @@ export default function Why() {
                                 className="title"
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8 }}>
+                                transition={{ duration: 0.6 }}>
                                 이러한 고민을 <b>해결해드립니다.</b>
                             </motion.div>
                             <motion.div
                                 className="accordion-container"
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, delay: 0.3 }}>
+                                transition={{ duration: 0.6, delay: 0.3 }}>
                                 <div className="item-wrap">
                                     <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                                         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
@@ -147,17 +147,17 @@ export default function Why() {
                             className="title"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8 }}>
-                            글적글적 연구소의 장점
+                            transition={{ duration: 0.6 }}>
+                            글적글적 연구소의 <b>장점</b>
                         </motion.div>
                         <div className="item-wrap">
                             <motion.div
                                 className="item"
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, delay: 0.2 }}>
+                                transition={{ duration: 0.6, delay: 0.2 }}>
                                 <div className="item-img">
-                                    <Image priority src="/why1.png" width={1080} height={1080} alt="img1"></Image>
+                                    <Image priority src="/whyone.png" width={1080} height={1080} alt="img1"></Image>
                                 </div>
                                 <div className="item-title">글쓰기</div>
                                 <div className="item-text">
@@ -169,9 +169,9 @@ export default function Why() {
                                 className="item"
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, delay: 0.4 }}>
+                                transition={{ duration: 0.6, delay: 0.4 }}>
                                 <div className="item-img">
-                                    <Image priority src="/why2.png" width={1080} height={1080} alt="img1"></Image>
+                                    <Image priority src="/whytwo.png" width={1080} height={1080} alt="img1"></Image>
                                 </div>
                                 <div className="item-title">커리어 전략</div>
 
@@ -181,9 +181,9 @@ export default function Why() {
                                 className="item"
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, delay: 0.6 }}>
+                                transition={{ duration: 0.6, delay: 0.6 }}>
                                 <div className="item-img">
-                                    <Image priority src="/why3.png" width={1080} height={1080} alt="img1"></Image>
+                                    <Image priority src="/whythree.png" width={1080} height={1080} alt="img1"></Image>
                                 </div>
                                 <div className="item-title">브랜딩</div>
 

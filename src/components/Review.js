@@ -16,7 +16,7 @@ export default function Review() {
                         className="item-img-wrap"
                         initial={{ opacity: 0, rotateY: 90 }}
                         whileInView={{ opacity: 1, rotateY: 0 }}
-                        transition={{ duration: 0.8, delay: delayTime1 * 0.1 }}
+                        transition={{ duration: 0.6, delay: delayTime1 * 0.1 }}
                         viewport={{ once: true }}>
                         <Image priority src={path1} className="item-img" alt="review" width={300} height={300}></Image>
                     </motion.div>
@@ -24,7 +24,7 @@ export default function Review() {
                         className="item-img-wrap"
                         initial={{ opacity: 0, rotateY: 90 }}
                         whileInView={{ opacity: 1, rotateY: 0 }}
-                        transition={{ duration: 0.8, delay: delayTime2 * 0.1 }}
+                        transition={{ duration: 0.6, delay: delayTime2 * 0.1 }}
                         viewport={{ once: true }}>
                         <Image priority src={path2} className="item-img" alt="review" width={300} height={300}></Image>
                     </motion.div>
@@ -38,15 +38,16 @@ export default function Review() {
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
                 <section id="review">
                     <div className="review-container">
+                        <div className="sub-title">생생 강좌 후기</div>
                         <motion.div
                             className="title"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8 }}>
+                            transition={{ duration: 0.6 }}>
                             글쓰기 강좌 수강생들의 <b>생생한 이야기</b>
                         </motion.div>
                         <motion.div
-                            className="sub-title"
+                            className="title-desc"
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.3, delay: 0.5 }}>

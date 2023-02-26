@@ -25,7 +25,7 @@ export default function Intro() {
                         className="title"
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0 }}
+                        transition={{ duration: 0.6, delay: 0 }}
                         viewport={{ once: true }}>
                         단 30일 안에
                     </motion.div>
@@ -33,7 +33,7 @@ export default function Intro() {
                         className="title"
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.5 }}
+                        transition={{ duration: 0.6, delay: 0.5 }}
                         viewport={{ once: true }}>
                         <span className="em">글쓰기, 브랜딩, 커리어 전략까지</span> 완벽 대비
                     </motion.div>
@@ -41,7 +41,7 @@ export default function Intro() {
                         className="sub-title"
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 1 }}
+                        transition={{ duration: 0.6, delay: 1 }}
                         viewport={{ once: true }}>
                         글쓰기 챌린지 전자책 지금 받아가세요.
                     </motion.div>
@@ -52,7 +52,7 @@ export default function Intro() {
                                 className="desc"
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
-                                transition={{ duration: 0.8, delay: 1.5 }}
+                                transition={{ duration: 0.6, delay: 1.5 }}
                                 viewport={{ once: true }}>
                                 글쓰기는 부담스럽습니다 브랜딩은 어렵습니다. 커리어 전략은 막막합니다. 하고자 하는 의지만으로 모든 것이 술술 풀리지
                                 않습니다. 시작하고자 하는 의지를 초반부터 꺾어버리는 글쓰기, 브랜딩, 커리어 전략. 한 번에 해결할 수 없을까요?
@@ -94,7 +94,7 @@ export default function Intro() {
                             <ThemeProvider theme={theme}>
                                 <div className="apply-button">
                                     <Button variant="contained" color="yellow" disableElevation={true}>
-                                        <Link activeClass="active" to="apply" spy={true} smooth={true} duration={1000}>
+                                        <Link activeClass="active" to="apply" spy={true} smooth={true} duration={1000} size="large">
                                             무료PDF 신청하기
                                         </Link>
                                     </Button>

@@ -6,13 +6,19 @@
     margin-bottom: 1rem;
 }
 
-#review .sub-title {
-    font-family: 'Noto Serif KR', serif;
-    font-size: 1.2rem;
+#review .title-desc {
+    /* font-family: 'Noto Serif KR', serif; */
+    font-size: 1rem;
     font-weight: 400;
     text-align: center;
     margin-bottom: 4rem;
-    color: #808080;
+    line-height: 1.5rem;
+}
+
+#review .sub-title {
+    color: #f6c350;
+    font-weight: 400;
+    text-align: center;
 }
 
 #review .item-wrap {
@@ -51,7 +57,7 @@
 
 @media all and (min-width: 1023px) {
     #review .review-container {
-        padding: 10rem 10rem;
+        padding: 10rem 4rem;
     }
 }
 

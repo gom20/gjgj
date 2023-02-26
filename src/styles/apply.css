@@ -13,6 +13,12 @@
 }
 
 #apply .sub-title {
+    color: #f6c350;
+    font-weight: 400;
+    text-align: center;
+}
+
+#apply .title-desc {
     font-size: 2.5rem;
     font-weight: 600;
     font-family: 'Noto Serif KR', serif;
@@ -24,30 +30,45 @@
 #apply .apply-form {
     display: flex;
     flex-direction: column;
-    width: 30rem;
+    width: 100%;
 }
 
 #apply .apply-input {
-    width: 100%;
-    height: 2.5rem;
-    line-height: 2.5rem;
-    border: 1px solid #333333;
-    padding: 0rem 1rem;
-    border-radius: 2rem 2rem 2rem 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 #apply .apply-button {
     width: 100%;
-    height: 2.5rem;
-    line-height: 2.5rem;
-    border: 1px solid #f6c350;
-    border-radius: 2rem 2rem 2rem 2rem;
-    background-color: #fff;
-    color: #f6c350;
 }
 
-#apply .apply-button:hover {
-    background-color: #f6c350;
-    color: #4d4d4d;
+#apply .apply-img {
+    /* width: 40rem; */
+    width: 60%;
+    opacity: 0.6;
+}
+
+#apply .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+@media all and (min-width: 1023px) {
+    #apply .form-container {
+        width: 60%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    #apply .form-container {
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 767px) {
+    #apply .form-container {
+        width: 100%;
+    }
 }
