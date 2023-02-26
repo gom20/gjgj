@@ -12,8 +12,8 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>글적글적 연구소</title>
-                <meta name="description" content="글적글적 연구소" />
+                <title>글적글적연구소</title>
+                <meta name="description" content="글적글적연구소" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

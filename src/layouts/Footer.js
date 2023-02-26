@@ -1,6 +1,3 @@
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -14,12 +11,21 @@ export default function Footer() {
                 <p>메일 확인은 생각보다 빨라 놀라실 수 있음을 미리 알려드립니다.</p>
             </div>
             <div className="line">
-                <div className="icon-wrap">
-                    <Link href={'https://www.instagram.com/hyun.a.007'} target="_blank" className="link">
-                        <InstagramIcon className="icon"></InstagramIcon>
+                <div className="link-wrap">
+                    <Link href={'https://www.instagram.com/hyun.a.007'} target="_blank" className="link" style={{ textDecoration: 'none' }}>
+                        인스타그램
                     </Link>
-                    <Link href={'https://www.facebook.com/hyuna0070'} target="_blank" className="link">
-                        <FacebookIcon className="icon"></FacebookIcon>
+                    <div className="link-divider">&nbsp;&nbsp;·&nbsp;&nbsp;</div>
+                    <Link href={'https://www.facebook.com/hyuna0070'} target="_blank" className="link" style={{ textDecoration: 'none' }}>
+                        페이스북
+                    </Link>
+                    <div className="link-divider">&nbsp;&nbsp;·&nbsp;&nbsp;</div>
+                    <Link href={'https://blog.naver.com/atoz_story'} target="_blank" className="link" style={{ textDecoration: 'none' }}>
+                        네이버 블로그
+                    </Link>
+                    <div className="link-divider">&nbsp;&nbsp;·&nbsp;&nbsp;</div>
+                    <Link href={'https://brunch.co.kr/@atozstory'} target="_blank" className="link" style={{ textDecoration: 'none' }}>
+                        다음 브런치
                     </Link>
                 </div>
             </div>
