@@ -3,11 +3,7 @@ import Apply from '@/components/Apply';
 import Intro from '@/components/Intro';
 import Review from '@/components/Review';
 import Why from '@/components/Why';
-import { Inter } from '@next/font/google';
 import Head from 'next/head';
-
-const inter = Inter({ subsets: ['latin'] });
-
 export default function Home() {
     return (
         <>

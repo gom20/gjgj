@@ -36,7 +36,7 @@ export default function Apply() {
         setApplied(true);
         emailjs.sendForm('service_2ncutkp', 'template_8p22p29', form.current, process.env.NEXT_PUBLIC_EMAIL_KEY).then(
             (result) => {
-                alert('신청이 완료되었습니다.');
+                alert('신청이 완료되었습니다. 2~3일 이내로 메일 전송 드리겠습니다.');
             },
             (error) => {
                 alert('신청에 실패하였습니다. atoz_story@naver.com 메일로 직접 신청해주세요.');
@@ -51,7 +51,7 @@ export default function Apply() {
                     <div className="sub-title">무료 PDF 신청하기</div>
                     <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
                         <div className="title">글쓰기, 브랜딩, 커리어 전략까지</div>
-                        <div className="title-desc">완벽 대비 전자책 신청하기</div>
+                        <div className="title-desc">완벽 대비 워크북 신청하기</div>
                     </motion.div>
                     <div className="form-container">
                         <div className="apply-img">

@@ -33,19 +33,26 @@ export default function Intro() {
                         className="title"
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.5 }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
                         viewport={{ once: true }}>
                         <span className="em">글쓰기, 브랜딩, 커리어 전략까지</span> 완벽 대비
+                    </motion.div>
+                    <motion.div
+                        className="title"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.8 }}
+                        viewport={{ once: true }}>
+                        글쓰기 챌린지 워크북
                     </motion.div>
                     <motion.div
                         className="sub-title"
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 1 }}
+                        transition={{ duration: 0.6, delay: 1.2 }}
                         viewport={{ once: true }}>
-                        글쓰기 챌린지 전자책 지금 받아가세요.
+                        지금 받아가세요.
                     </motion.div>
-
                     <div className="content-wrap">
                         <div className="desc-wrap">
                             <motion.div
@@ -54,13 +61,17 @@ export default function Intro() {
                                 whileInView={{ opacity: 1 }}
                                 transition={{ duration: 0.6, delay: 1.5 }}
                                 viewport={{ once: true }}>
-                                글쓰기는 부담스럽습니다 브랜딩은 어렵습니다. 커리어 전략은 막막합니다. 하고자 하는 의지만으로 모든 것이 술술 풀리지
-                                않습니다. 시작하고자 하는 의지를 초반부터 꺾어버리는 글쓰기, 브랜딩, 커리어 전략. 한 번에 해결할 수 없을까요?
-                                글적글적연구소에서는 가능합니다.
-                                <b>
-                                    이 PDF를 따라 30일 챌린지를 시작해보세요. 어느새 글쓰기는 술술, 브랜딩은 덤으로, 내가 원하는 커리어의 첫 단계도
-                                    완성한 스스로를 발견할 수 있을 거예요. 지금 시작하세요.
-                                </b>
+                                <p>
+                                    글쓰기는 부담스럽습니다 브랜딩은 어렵습니다. 커리어 전략은 막막합니다. 하고자 하는 의지만으로 모든 것이 술술
+                                    풀리지 않습니다. 시작하고자 하는 의지를 초반부터 꺾어버리는 글쓰기, 브랜딩, 커리어 전략. 한 번에 해결할 수
+                                    없을까요? 글적글적연구소에서는 가능합니다.
+                                </p>
+                                <p>
+                                    <b>
+                                        이 PDF를 따라 30일 챌린지를 시작해보세요. 어느새 글쓰기는 술술, 브랜딩은 덤으로, 내가 원하는 커리어의 첫
+                                        단계도 완성한 스스로를 발견할 수 있을 거예요. 지금 시작하세요.
+                                    </b>
+                                </p>
                             </motion.div>
                             <div className="analysis">
                                 <div className="item-wrap">
@@ -95,7 +106,7 @@ export default function Intro() {
                                 <div className="apply-button">
                                     <Button variant="contained" color="yellow" disableElevation={true}>
                                         <Link activeClass="active" to="apply" spy={true} smooth={true} duration={1000} size="large">
-                                            무료PDF 신청하기
+                                            무료 워크북 신청하기
                                         </Link>
                                     </Button>
                                 </div>
