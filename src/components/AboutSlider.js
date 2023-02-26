@@ -1,6 +1,4 @@
-import React from 'react';
 import Slider from 'react-slick';
-import { motion } from 'framer-motion';
 export default function AboutSlider() {
     var settings = {
         dots: true,
@@ -39,23 +37,9 @@ export default function AboutSlider() {
             {datas.map((data, index) => {
                 return (
                     <div className="item" key={data.key}>
-                        <motion.div
-                            initial={{ opacity: 1, rotateY: 90 }}
-                            whileInView={{ opacity: 1, rotateY: 0 }}
-                            transition={{ duration: 0.6 }}
-                            className="item-number">
-                            {data.key}
-                        </motion.div>
-                        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }} className="item-title">
-                            {data.title}
-                        </motion.div>
-                        <motion.div
-                            className="item-text"
-                            initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1, rotateX: 0 }}
-                            transition={{ duration: 0.6 }}>
-                            {data.desc}
-                        </motion.div>
+                        <div className="item-number">{data.key}</div>
+                        <div className="item-title">{data.title}</div>
+                        <div className="item-text">{data.desc}</div>
                     </div>
                 );
             })}

@@ -59,13 +59,13 @@ export default function Apply() {
                         </div>
 
                         <form ref={form} onSubmit={sendEmail} className="apply-form">
-                            <CssTextField label="이름" name="from_name" id="custom-css-outlined-input" size="medium" className="apply-input" />
+                            <CssTextField label="이름" name="from_name" id="custom-css-outlined-input" size="small" className="apply-input" />
                             <CssTextField
                                 type="email"
                                 label="이메일"
                                 name="from_email"
                                 id="custom-css-outlined-input"
-                                size="medium"
+                                size="small"
                                 className="apply-input"
                             />
                             <ThemeProvider theme={theme}>
