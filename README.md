@@ -1,7 +1,9 @@
 # ✏ 글적글적연구소
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=black"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/Framer-0055FF?style=flat&logo=Framer&logoColor=white"/> <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=Next.js&logoColor=white"/> <img src="https://img.shields.io/badge/Vercel-000000?style=flat&logo=Vercel&logoColor=white"/>
 
+
 ## 📷 Screenshot
+http://gjgj.vercel.app
 
 <kbd>![1](https://user-images.githubusercontent.com/7158623/221452998-10a7d87e-c9f1-4d05-8110-59f218cf64a1.png)</kbd>
 <kbd>![2](https://user-images.githubusercontent.com/7158623/221453001-53fb3c27-1b4e-4f0f-9b4c-87974e9d358d.png)</kbd>
